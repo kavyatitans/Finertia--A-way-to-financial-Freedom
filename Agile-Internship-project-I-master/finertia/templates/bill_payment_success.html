@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>Title</title>#}
+{#</head>#}
+{% block body_block %}
+	{% block content %}
+    <h2>Bill Payment Successful!</h2>
+    <a href="{% url 'finertia:payments' %}">Pay another bill</a>
+{% endblock %}
+{% endblock %}
+
+</html>

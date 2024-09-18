@@ -1,0 +1,106 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    background-color: black;
+}
+
+/*.container {*/
+/*padding: 0;*/
+/*}*/
+
+.custom-main-container {
+            display: flex;
+    flex-direction: row;
+            width: 100%;
+            /*gap: 100px; !* Add space between menu and cards *!*/
+    /* Space above the main container */
+            padding-left: 10px; /* Remove any padding on the left */
+            margin: 0;
+        }
+        /*.menu {*/
+        /*    flex: 0 0 250px; !* Fixed width for side menu *!*/
+        /*    !*max-width: 250px; !* Adjust based on your design *!*!*/
+        /*    border-right: 2px solid #007bff; !* Optional border to separate menu from cards *!*/
+        /*    !*padding-right: 20px; !* Space between menu and cards *!*!*/
+        /*    !*margin-left: 0;*!*/
+        /*    margin-top: 10px;*/
+        /*    padding: 10px;*/
+        /*    box-sizing: border-box;*/
+        /*}*/
+        .cards {
+            flex: 1;
+            padding-left: 10px; /* Space between menu and cards */
+            box-sizing: border-box;
+        }
+        .card-container {
+            margin-top: 10px;
+        }
+        .card {
+            margin-bottom: 20px;
+            padding: 50px; /* Add padding inside the card */
+            width: 100%; /* Make the card take the full width of its container */
+            height: 400px; /* Adjust height as needed */
+        }
+        .card-title {
+            font-size: 1.5rem;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+
+
+
+/* .btn-custom {*/
+/*     display: block; !* Ensure buttons stack vertically *!*/
+/*    margin-bottom: 1rem; !* Add space between buttons *!*/
+/*    background-color: transparent; !* Transparent background by default *!*/
+/*    border: 2px solid transparent; !* Transparent border *!*/
+/*     align-items: center;*/
+/*    color: black; !* Default text color *!*/
+/*    text-align: center; !* Center align text *!*/
+/*    transition: background-color 0.3s, color 0.3s, border-color 0.3s; !* Smooth transition for hover effect *!*/
+/*    padding: 10px 20px; !* Ensure proper padding *!*/
+/*    line-height: 1; !* Consistent line height *!*/
+/* }*/
+/* .transparent-btn {*/
+/*    !*background-color: transparent;*!*/
+/*    border: 2px solid transparent; !* No border by default *!*/
+/*     text-align: center;*/
+/*    color: black; !* Green text *!*/
+/*    !*font-size: 4vw; !* Set the font size *!*!*/
+/*     !* Set the font family *!*/
+/*    transition: background-color 0.3s, color 0.3s, border 0.3s; !* Smooth transition *!*/
+/*     padding: 10px 20px; !* Ensure proper padding *!*/
+/*    line-height: 1; !* Consistent line height *!*/
+/*}*/
+
+ .btn-custom, .transparent-btn {
+    display: flex; /* Flex display to center content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    margin-bottom: 1rem; /* Add space between buttons */
+    background-color: transparent; /* Transparent background by default */
+    border: 2px solid transparent; /* Transparent border */
+    color: black; /* Default text color */
+    text-align: center; /* Center align text */
+    padding: 10px 20px; /* Ensure proper padding */
+    font-size: 18px; /* Ensure consistent font size */
+    line-height: 1; /* Consistent line height */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
+}
+
+ .insights-heading {
+    font-size: 2rem; /* Adjust the size as needed */
+    margin-bottom: 20px; /* Space between heading and cards */
+    color: white; /* Optional: Set a color for the heading */
+    text-align: left; /* Align text to the left */
+    padding-left: 5px; /* Ensure no extra padding on the left */
+    font-family: "Berlin Sans FB", serif;
+}
+

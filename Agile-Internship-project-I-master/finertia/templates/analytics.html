@@ -1,0 +1,177 @@
+
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desktop - 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Color:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'finertia/css/analytics_css.css' %}" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+        .sidebar {
+            margin-top: 20px;
+            height: 2200px;
+            padding: 20px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .manage, .preferences {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .menu-item img {
+            margin-right: 10px;
+        }
+
+        .navbar-brand {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 500;
+            transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .navbar-brand:hover {
+            color: #ffcc00;
+            text-shadow: 0 0 10px #ffcc00;
+            text-decoration: underline;
+            transform: scale(1.1);
+        }
+
+        .financial-form {
+            background-color: #2a2a2a; /* Slightly lighter color than black */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1200px; /* Increased width of the form */
+            margin: 0 auto;
+            color: #fff;
+        }
+
+        .financial-form h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: rgb(42, 159, 163);;
+        }
+
+        .financial-form label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: rgb(42, 159, 163); /* Attractive and eye-catching color */
+        }
+
+        .financial-form input,
+        .financial-form select,
+        .financial-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .financial-form .inline-radio {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .financial-form .inline-radio label {
+            margin-right: 20px;
+        }
+
+        .financial-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(42, 159, 163); /* Attractive and eye-catching color */
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #2a2a2a;
+        }
+
+       .financial-form:hover {
+    background-color: #333; /* Slightly lighter color on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="desktop-1">
+        <div class="container">
+            <div class="frame-19">
+                <div class="frame-17">
+                    <span class="login">
+                        <a class="navbar-brand" style="color:white; text-decoration: none;" href="{% url 'finertia:logout' %}">Logout</a>
+                    </span>
+                </div>
+                <div class="home">
+                    <a class="navbar-brand justify-content-between" style="color:white; text-decoration: none;" href="{% url 'finertia:home' %}">Home</a>
+                </div>
+                <img src="{% static 'finertia/assets/analtics_insights_payments/images/finertia_transparent_1.png' %}" style="height: 250px; width: 250px; margin-right: 1300px">
+            </div>
+
+            <div class="sidebar">
+                <div class="manage">MANAGE</div>
+                <div class="menu-item">
+                    <img src="{% static 'finertia/assets/analtics_insights_payments/vectors/vector_2_x2.svg' %}" alt="Dashboard Icon" />
+                    <span><a class="navbar-brand" style="color:white; text-decoration: none;" href="{% url 'finertia:dashboard' %}">Dashboard</a></span>
+                </div>
+                <div class="menu-item">
+                    <img src="{% static 'finertia/assets/analtics_insights_payments/vectors/vector_17_x2.svg' %}" alt="Analytics Icon" />
+                    <span><a class="navbar-brand" style="color:white; text-decoration: none;" href="{% url 'finertia:analytics' %}">Analytics</a></span>
+                </div>
+                <div class="menu-item">
+                    <img src="{% static 'finertia/assets/analtics_insights_payments/vectors/vector_31_x2.svg' %}" alt="Insights Icon" />
+                    <span><a class="navbar-brand" style="color:white; text-decoration: none;" href="{% url 'finertia:insights' %}">Insights</a></span>
+                </div>
+
+                <div class="preferences">PREFERENCES</div>
+
+                <div class="menu-item">
+                    <img src="{% static 'finertia/assets/analtics_insights_payments/vectors/vector_34_x2.svg' %}" alt="Payments Icon" />
+                    <span><a class="navbar-brand" style="color:white; text-decoration: none;" href="{% url 'finertia:payments' %}">Payments</a></span>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="transactions">
+                    <!-- Financial Form Section -->
+                    <div class="financial-form">
+                        <h1>Financial Form</h1>
+                        <form method="post">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                    <!-- End of Financial Form Section -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

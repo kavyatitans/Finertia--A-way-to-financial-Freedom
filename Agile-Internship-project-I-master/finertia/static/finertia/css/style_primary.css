@@ -1,0 +1,46 @@
+
+@import url("payment.css");
+@import url("analytics_css.css");
+body, html {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+.header-image-container {
+            position: relative;
+            height: 380px;
+            width: 100%;
+        }
+        .header-image {
+
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .header-content {
+            margin: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .logo {
+            /*height: 500px;*/
+            /*width: 500px;*/
+            /*!*padding-bottom: 100px;*!*/
+            /*height: 450px;  !* Adjust the logo height to fit better *!*/
+            /*width: auto;   !* Maintain aspect ratio *!*/
+            /*padding: 10px; !* Ensure there is padding around the logo *!*/
+
+        }
+        .menu {
+            padding-right: 50px;
+            display: flex;
+            gap: 15px;
+        }

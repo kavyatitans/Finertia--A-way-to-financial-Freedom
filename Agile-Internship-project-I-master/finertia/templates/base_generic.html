@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Finertia{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+
+    .frame-19 {
+  background: url('../static/finertia/assets/images/stock_cake_digital_finance_hub_17182170571.jpeg') 50% / cover no-repeat;
+  background-color: #1a1a1a; /* Dark background for header */
+  display: flex;
+  flex-direction: row-reverse;
+  align-items:center;
+  gap: 20px; /* No space between items */
+  height: 180px;
+  padding: 5px 2px; /* Adjust padding as needed */
+  {#background-color: #1a1a1a; /* Dark background for header */
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for the header */
+  position: fixed; /* Keep header fixed at the top */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure header is above other content */
+}
+
+.frame-19 div {
+  margin: 0 5px; /* Spacing between items */
+  cursor: pointer;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.frame-19 div:hover {
+  color: #f39c12; /* Highlight color on hover */
+}
+
+.frame-19 .frame-17 {
+  display: flex;
+  align-items: center;
+}
+
+.frame-19 .login {
+  padding: 5px 10px; /* Padding around the login button */
+  border: 1px solid #f39c12; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  background-color: transparent;
+  color: #f39c12; /* Text color */
+  cursor: pointer;
+  margin-right: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+}
+
+.frame-19 .login:hover {
+  background-color: #f39c12; /* Highlight background on hover */
+  color: #fff; /* Text color on hover */
+}
+
+    </style>
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+        <div class="frame-19" >
+                 <div class="frame-17" >
+                <span class="login">
+                  <a class="navbar-brand"  style="color:white; text-decoration: none;" href="{% url 'finertia:logout' %}">Logout</a>
+                </span>
+               </div>
+                 <div class="home">
+                     <a class="navbar-brand" style="color:white; text-decoration: none;" href="{% url 'finertia:signup' %}">Sign Up</a>
+                </div>
+                 <img src="../static/finertia/assets/analtics_insights_payments/images/finertia_transparent_1.png" style="height: 250px; width: 250px; margin-right: 1300px">
+        </div>
+
+
+    {% block content %}{% endblock %}
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

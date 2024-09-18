@@ -1,0 +1,570 @@
+.desktop-1 {
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.desktop-1 .rectangle-1 {
+    background: var(--black, #000000);
+    margin-bottom: 748px;
+    width: 100%;
+    height: 379px;
+}
+
+.desktop-1 .financial-wellness-is-away-of-effectively-managing-your-finances-not-knowing-how-to-deal-with-your-finances-can-lead-to-major-stress-anxiety-or-depression-finance-plays-asubstantial-role-in-your-daily-wellness-and-well-being {
+    text-align: center;
+    overflow-wrap: break-word;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: -0.6px;
+    line-height: 1.35;
+    color: #FFFFFF;
+}
+
+.desktop-1 .container-2 {
+    background: #000000;
+    position: relative;
+    margin-right: 1px;
+    display: flex;
+    padding: 30.5px 84.8px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.desktop-1 .follow-us-to-know-more {
+    margin-right: 60px;
+    width: 255.1px;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 44.4px;
+    letter-spacing: -0.9px;
+    line-height: 1.35;
+    color: #FFFFFF;
+}
+
+.desktop-1 .linked-in-2668700640-ezgif-com-crop-11 {
+    background: url('../assets/images/linked_in_2668700640_ezgif_com_crop_11.jpeg') 50% / cover no-repeat;
+    width: 80px;
+    height: 78px;
+}
+
+.desktop-1 .frame-33858 {
+    margin: 0.4px 78.8px 1.6px 0;
+    display: flex;
+    width: 78.9px;
+    height: 78.9px;
+    box-sizing: border-box;
+}
+
+.desktop-1 .download-1 {
+    background: url('../assets/images/download_1.jpeg') 50% / cover no-repeat;
+    width: 83px;
+    height: 80px;
+}
+
+.desktop-1 .frame-33859 {
+    display: flex;
+    width: 83px;
+    height: 80px;
+    box-sizing: border-box;
+}
+
+.desktop-1 .container-5 {
+    display: flex;
+    flex-direction: row;
+    width: 241.8px;
+    box-sizing: border-box;
+}
+
+.desktop-1 .ellipse-1 {
+    border-radius: 11.7px;
+    margin-top: 6.4px;
+    width: 23.3px;
+    height: 23.3px;
+}
+
+.desktop-1 .ellipse-2 {
+    border-radius: 3px;
+    background: #FFFFFF;
+    margin-bottom: 23.8px;
+    width: 6px;
+    height: 6px;
+}
+
+.desktop-1 .container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 29.3px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+.desktop-1 .rectangle-11 {
+    border-radius: 8.7px;
+    border: 3.2px solid #FFFFFF;
+    position: absolute;
+    right: 9.6px;
+    bottom: 8.2px;
+    width: 44.9px;
+    height: 45.8px;
+}
+
+.desktop-1 .munchy-gram {
+    border-radius: 13.3px;
+    background: radial-gradient(58.52% 53.5% at 33.5% 100%, #FEDA75 9.38%, #FA7E1E 47.5%, rgba(250, 126, 30, 0) 100%), radial-gradient(187.41% 126% at 84.5% 113.5%, #F50B5E 19.76%, #DF0897 52.03%, #962FBF 76.88%, #4F5BD5 93.34%);
+    position: relative;
+    display: flex;
+    padding: 15.6px 15.1px 18.8px 19.7px;
+    width: 64.1px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+.desktop-1 .frame-33860 {
+    margin: 7.4px 0 8.5px 0;
+    display: flex;
+    width: 78.9px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+.desktop-1 .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 398.5px;
+    box-sizing: border-box;
+}
+
+.desktop-1 .download-11 {
+    background: url('../assets/images/download_11.png') 50% / cover no-repeat;
+    margin: 5.5px 0;
+    width: 75px;
+    height: 69px;
+}
+
+.desktop-1 .container-3 {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 584.6px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+.desktop-1 .frame-33861 {
+    margin: 31px 25.4px 95px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+.desktop-1 .contact-us {
+    overflow-wrap: break-word;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: -0.6px;
+    line-height: 1.35;
+    color: #FFFFFF;
+}
+
+.desktop-1 .container-6 {
+    background: #000000;
+    position: relative;
+    display: flex;
+    padding: 74px 0 131px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.desktop-1 .container-1 {
+    margin: 0 1px 0 116px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.desktop-1 .container-4 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.desktop-1 .stock-cake-digital-finance-hub-17182170571 {
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    border: 1px solid #000000;
+    background: url('../assets/images/stock_cake_digital_finance_hub_17182170571.jpeg') 50% / cover no-repeat;
+    position: absolute;
+    left: -0.9px;
+    top: -2.3px;
+    width: 100%;
+    height: 377px;
+}
+
+.desktop-1 .our-best-results-for {
+    margin: 0 0 76.4px 5px;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.194;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.desktop-1 .image {
+    border-radius: 9px;
+    background: url('../assets/images/image_1.jpeg') 50% / cover no-repeat;
+    margin-bottom: 22px;
+    width: 254px;
+    height: 365px;
+}
+
+.desktop-1 .iphone-11-pro-max-copy {
+    margin-right: 42.1px;
+    overflow-wrap: break-word;
+    font-family: 'Bungee Color';
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 1.458;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.desktop-1 .arrow-circle-right {
+    margin: 16.5px 0;
+    width: 37px;
+    height: 37px;
+}
+
+.desktop-1 .frame-21 {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+
+.desktop-1 .product-1 {
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.desktop-1 .image-1 {
+    border-radius: 9px;
+    background: url('../assets/images/image.jpeg') 50% / cover no-repeat;
+    margin-bottom: 22px;
+    width: 254px;
+    height: 365px;
+}
+
+.desktop-1 .iphone-11-pro-max-copy-1 {
+    margin-right: 24.3px;
+    overflow-wrap: break-word;
+    font-family: 'Bungee Color';
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 1.458;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.desktop-1 .arrow-circle-right-1 {
+    margin: 16.5px 0;
+    width: 37px;
+    height: 37px;
+}
+
+.desktop-1 .frame-211 {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+
+.desktop-1 .product-2 {
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.desktop-1 .image-2 {
+    border-radius: 9px;
+    background: url('../assets/images/image_3.jpeg') 50% / cover no-repeat;
+    margin-bottom: 22px;
+    width: 254px;
+    height: 365px;
+}
+
+.desktop-1 .iphone-11-pro-max-copy-2 {
+    margin-right: 35px;
+    width: 195px;
+    overflow-wrap: break-word;
+    font-family: 'Bungee Color';
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 1.458;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.desktop-1 .arrow-circle-right-2 {
+    margin: 16.5px 0;
+    width: 37px;
+    height: 37px;
+}
+
+.desktop-1 .frame-212 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 254px;
+    box-sizing: border-box;
+}
+
+.desktop-1 .product-3 {
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 254px;
+    box-sizing: border-box;
+}
+
+.desktop-1 .image-3 {
+    border-radius: 9px;
+    background: url('../assets/images/image_2.jpeg') 50% / cover no-repeat;
+    margin-bottom: 22px;
+    width: 254px;
+    height: 365px;
+}
+
+.desktop-1 .iphone-11-pro-max-copy-3 {
+    margin-right: 61.4px;
+    overflow-wrap: break-word;
+    font-family: 'Bungee Color';
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 1.458;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.desktop-1 .arrow-circle-right-3 {
+    margin: 16.5px 0;
+    width: 37px;
+    height: 37px;
+}
+
+.desktop-1 .frame-213 {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+
+.desktop-1 .product-4 {
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.desktop-1 .frame-20 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+
+.desktop-1 .frame-1 {
+    background: #000000;
+    position: absolute;
+    left: 0;
+    top: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5%;
+    width: 100%;
+    height: 752px;
+    box-sizing: border-box;
+}
+
+.desktop-1 .home {
+    margin: 16px 16px 16px 0;
+    display: inline-block;
+    width: 57px;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-style: italic;
+    font-weight: 700;
+    margin-right: 30px;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    line-height: 1.6;
+    background: linear-gradient(90deg, #FFFFFF, #999999);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.desktop-1 .product {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 16px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    margin-right: 20px;
+    line-height: 1.6;
+    background: linear-gradient(90deg, #FFFFFF, #999999);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.desktop-1 .banking {
+    margin: 17.5px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    margin-right: 20px;
+    line-height: 1.6;
+    background: linear-gradient(90deg, #FFFFFF, #999999);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.desktop-1 .login {
+    overflow-wrap: break-word;
+    font-family: 'Arial', 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    line-height: 1.6;
+    margin-right: 10px;
+    padding-left: 25px;
+    background: linear-gradient(90deg, #FFFFFF, #999999);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.desktop-1 .frame-17 {
+    border-radius: 100px;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    padding: 15px 10.7px 15px 0;
+    width: 120px;
+    box-sizing: border-box;
+}
+
+.desktop-1 .frame-19 {
+    position: absolute;
+    top: 95.5px;
+    right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: fit-content;
+    box-sizing: border-box;
+}
+
+.desktop-1 .finertia-transparent-1 {
+    background: url('../assets/images/finertia_transparent_1.png') 50% / cover no-repeat;
+    position: absolute;
+    left: 46px;
+    top: 4px;
+    width: 435px;
+    height: 279px;
+}
+
+
+footer {
+    /*background-color: #333;*/
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex-shrink: 0;
+    /margin-top: inherit;/
+}
+
+.footer-content {
+    /*margin: 5px 0;*/
+    display: flex;
+    justify-content: space-between;
+     padding: 30px;
+    align-items: center;
+}
+
+.footer-content a {
+    color: #4CAF50;
+    /text-decoration: none;/
+    /margin: 0 10px;/
+}
+
+.footer-content p {
+
+    margin: 10px 0;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

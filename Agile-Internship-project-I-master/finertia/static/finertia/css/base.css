@@ -1,0 +1,203 @@
+@import url("insights1.css");
+@import url("payment.css");
+/*body, html {*/
+/*            margin: 0;*/
+/*            padding: 0;*/
+/*            background-color: deepskyblue;*/
+/*        }*/
+
+/*.desktop-2 {*/
+/*    background: #000000;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    width: 100%;*/
+/*    box-sizing: border-box;*/
+/*}*/
+/*.header-image {*/
+
+/*            height: 100%;*/
+/*            width: 100%;*/
+/*            object-fit: cover;*/
+/*        }*/
+
+/*.container {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    align-items: flex-start;*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*    !*width: 100%;*!*/
+/*}*/
+
+/*.header-container {*/
+/*    width: 100%;*/
+/*    z-index: 1;*/
+/*    height: 400px;*/
+/*}*/
+
+/*!*.frame-19 {*!*/
+/*!*    display: flex;*!*/
+/*!*    align-items: center;*!*/
+/*!*    width: 100%;*!*/
+/*!*    padding: 0;*!*/
+/*!*    margin: 0;*!*/
+/*!*}*!*/
+
+/*!*.frame-17 {*!*/
+/*!*    flex: 1;*!*/
+/*!*}*!*/
+
+/*.logo {*/
+/*    height: 250px;*/
+/*    width: 250px;*/
+/*    margin-left: 0; !* Remove any left margin *!*/
+/*}*/
+
+/*.sidebar {*/
+/*    background-color: #000;*/
+/*    color: #fff;*/
+/*    padding: 0;*/
+/*    width: 250px; !* Adjust width as needed *!*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: flex-start;*/
+/*    z-index: 2;*/
+/*    position: relative;*/
+/*}*/
+
+/*.sidebar .menu-item {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    padding: 10px 0;*/
+/*}*/
+
+/*.sidebar .menu-item img {*/
+/*    width: 30px; !* Adjust icon size as needed *!*/
+/*    margin-right: 10px;*/
+/*}*/
+
+/*.sidebar .menu-item span a {*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.manage, .preferences {*/
+/*    margin: 20px 0 10px 10px;*/
+/*    font-weight: bold;*/
+/*    font-size: 1.2em;*/
+/*}*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.custom-desktop-2 {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.custom-header-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.custom-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    /* width: 100%; */
+    width: 100%; /* Ensure the container takes the full width */
+}
+
+.custom-header-container {
+    width: 100%;
+    z-index: 1;
+    height: 380px;
+    position: relative;
+}
+
+.custom-logo {
+    height: 435px;
+    width: 435px;
+    position: absolute;
+    top: 38.5%;
+    left: 17.3%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    right: 150px;
+}
+
+.custom-sidebar {
+    background-color: #000;
+    color: #fff;
+    padding-left: 20px;
+    width: 250px; /* Adjust width as needed */
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 2;
+    position: relative;
+    flex-shrink: 0; /* Prevent the sidebar from shrinking */
+}
+
+.custom-sidebar .custom-menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%; /* Ensure the menu items take full width of sidebar */
+}
+
+.custom-sidebar .custom-menu-item img {
+   padding-left: 10px;
+    width: 40px; /* Adjust icon size as needed */
+    margin-right: 10px;
+
+}
+
+.custom-sidebar .custom-menu-item span a {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.custom-manage, .custom-preferences {
+    font-family: "Berlin Sans FB", sans-serif;
+    margin: 20px 0 10px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+
+}
+.main-content1 {
+  flex-grow: 1;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.custom-frame-19 {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.custom-header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.custom-button {
+    margin-right: 10px;
+}

@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'finertia/css/style.css' %}">
+    <style>
+        label{
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+<div class="desktop-1">
+    <div class="header">
+        <a href="{% url 'finertia:home' %}" class="home-button">Home</a>
+        <img src="{% static 'finertia/assets/images/stock_cake_digital_finance_hub_17182170571.jpeg' %}" alt="Header Background" class="background">
+        <img src="{% static 'finertia/assets/images/finertia_transparent_1.png' %}" alt="Finertia Logo" class="logo" href="{% url 'finertia:home' %}">
+    </div>
+    <div class="form-container">
+        <h2>Login</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-errors">
+                {% if form.non_field_errors %}
+                    <div class="error">
+                        {% for error in form.non_field_errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            <p>
+                <label for="id_username">Username:</label>
+                <input type="text" name="username" required id="id_username" value="{{ form.username.value }}">
+                {% if form.username.errors %}
+                    <div class="error">
+                        {% for error in form.username.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </p>
+            <p>
+                <label for="id_password">Password:</label>
+                <input type="password" name="password" required id="id_password" value="{{ form.password.value }}">
+                {% if form.password.errors %}
+                    <div class="error">
+                        {% for error in form.password.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </p>
+            <button type="submit">Login</button>
+        </form>
+{#        <p><a href="{% url 'finertia:password_reset' %}">Forgot password?</a></p>#}
+        <p style="font-weight: bolder">New user? <a href="{% url 'finertia:signup' %}" style=" color: white;">Sign Up</a></p>
+    </div>
+    <div class="footer-content">
+        <p>Follow us to know more:</p>
+        <a href="https://www.linkedin.com/in/finertia-ltd-439669321/">LinkedIn</a> | <a href="https://www.linkedin.com/in/finertia-ltd-439669321/">Twitter</a> | <a href="https://www.linkedin.com/in/finertia-ltd-439669321/">Instagram</a> | <a href="https://www.linkedin.com/in/finertia-ltd-439669321/">Facebook</a>
+    </div>
+</body>
+</html>

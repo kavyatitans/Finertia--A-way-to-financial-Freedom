@@ -1,0 +1,320 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body_block %}
+
+    <h2 style="font-family: 'Berlin Sans FB',sans-serif; color: white">Payments</h2>
+    <p style="font-family: 'Comic Sans MS',sans-serif ; color: white">Choose an Action to be performed</p>
+    <br>
+
+
+
+{#    <h3>Transfer Funds</h3>#}
+{#    <form method="post">#}
+{#        {% csrf_token %}#}
+{#        {{ transfer_form.as_p }}#}
+{#        <button type="submit" name="transfer">Transfer</button>#}
+{#    </form>#}
+{##}
+{#    <h3>Pay Bill</h3>#}
+{#    <form method="post">#}
+{#        {% csrf_token %}#}
+{#        {{ bill_payment_form.as_p }}#}
+{#        <button type="submit" name="bill_payment">Pay Bill</button>#}
+{#    </form>#}
+
+{#    <label for="optionSelect"></label><select id="optionSelect" onchange="toggleForms()">#}
+{#        <option value=""> Choose an Option </option>#}
+{#        <option value="transfer">Transfer Funds</option>#}
+{#        <option value="bill">Pay Bill</option>#}
+{#    </select>#}
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+        Choose an Option
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#" data-value="transfer" onclick="toggleForms('transfer')">Transfer Funds</a></li>
+        <li><a class="dropdown-item" href="#" data-value="bill" onclick="toggleForms('bill')">Pay Bill</a></li>
+    </ul>
+</div>
+
+{#    <div id="transferForm"  class="hidden">#}
+{#    #}
+{#    <h3>Transfer Funds</h3>#}
+{#    <form method="post">#}
+{#        {% csrf_token %}#}
+{#        {{ transfer_form.as_p }}#}
+{#        <button type="submit" name="transfer" value="Done" href="{% url 'finertia:transfer_success' %}">Transfer</button>#}
+{#    </form>#}
+{#</div>#}
+{##}
+{#<div id="billForm"  class="hidden">#}
+{#    <h3>Pay Bill</h3>#}
+{#    <form method="post">#}
+{#        {% csrf_token %}#}
+{#        {{ bill_payment_form.as_p }}#}
+{#        <button type="submit" name="bill_payment" value="Done" href="{% url 'finertia:bill_payment_success' %}">Pay Bill</button>#}
+{#    </form>#}
+{#</div>#}
+
+   <div id="transferForm" class="form-container hidden">
+    <h3 style="font-family: 'Comic Sans MS',sans-serif">Transfer Funds</h3>
+       <br>
+    <form style="font-family: 'Comic Sans MS',sans-serif" method="post">
+        {% csrf_token %}
+        <div class="form-card">
+            <div class="form-field">
+                <label for="{{ transfer_form.to_account.id_for_label }}">To Account:</label>
+                {{ transfer_form.to_account }}
+            </div>
+            <div class="form-field">
+                <label for="{{ transfer_form.amount.id_for_label }}">Amount:</label>
+                {{ transfer_form.amount }}
+            </div>
+            <div class="form-field">
+                <label for="{{ transfer_form.note.id_for_label }}">Note:</label>
+                {{ transfer_form.note }}
+            </div>
+        </div>
+        <button type="submit" name="transfer">Transfer</button>
+    </form>
+</div>
+
+{#<div id="billForm" class="form-container hidden">#}
+{#    <h3 style="font-family: 'Comic Sans MS',sans-serif">Pay Bill</h3>#}
+{#    <br>#}
+{#    <form style="font-family: 'Comic Sans MS',sans-serif" method="post">#}
+{#        {% csrf_token %}#}
+{#        <div class="form-card">#}
+{#            <div class="form-field">#}
+{#                <label for="{{ bill_payment_form.date.id_for_label }}">Date:</label>#}
+{#                {{ bill_payment_form.date }}#}
+{#            </div>#}
+{#            <div class="form-field">#}
+{#                <label for="{{ bill_payment_form.category.id_for_label }}">Category:</label>#}
+{#                {{ bill_payment_form.category }}#}
+{#            </div>#}
+{#            <div class="form-field">#}
+{#                <label for="{{ bill_payment_form.subcategory.id_for_label }}">Subcategory:</label>#}
+{#                {{ bill_payment_form.subcategory }}#}
+{#            </div>#}
+{#            <div class="form-field">#}
+{#                <label for="{{ bill_payment_form.note.id_for_label }}">Note:</label>#}
+{#                {{ bill_payment_form.note }}#}
+{#            </div>#}
+{#            <div class="form-field">#}
+{#                <label for="{{ bill_payment_form.amount.id_for_label }}">Amount:</label>#}
+{#                {{ bill_payment_form.amount }}#}
+{#            </div>#}
+{#            <div class="form-field">#}
+{#                <label for="{{ bill_payment_form.currency.id_for_label }}">Currency:</label>#}
+{#                {{ bill_payment_form.currency }}#}
+{#            </div>#}
+{#        </div>#}
+{#        <button type="submit" name="bill_payment">Pay Bill</button>#}
+{#    </form>#}
+{#</div>#}
+
+    <div id="billForm" class="form-container hidden">
+    <h3 style="font-family: 'Comic Sans MS',sans-serif">Pay Bill</h3>
+    <br>
+    <form style="font-family: 'Comic Sans MS',sans-serif" method="post">
+        {% csrf_token %}
+        <div class="form-card">
+            <div class="form-field">
+                <label for="{{ bill_payment_form.date.id_for_label }}">Date:</label>
+                {{ bill_payment_form.date }}
+            </div>
+            <div class="form-field">
+                <label for="{{ bill_payment_form.category.id_for_label }}">Category:</label>
+                {{ bill_payment_form.category }}
+            </div>
+            <div class="form-field">
+                <label for="{{ bill_payment_form.note.id_for_label }}">Note:</label>
+                {{ bill_payment_form.note }}
+            </div>
+            <div class="form-field">
+                <label for="{{ bill_payment_form.amount.id_for_label }}">Amount:</label>
+                {{ bill_payment_form.amount }}
+            </div>
+            <div class="form-field">
+                <label for="{{ bill_payment_form.currency.id_for_label }}">Currency:</label>
+                {{ bill_payment_form.currency }}
+            </div>
+            <div class="form-field">
+                <label for="{{ bill_payment_form.card_number.id_for_label }}">Card Number:</label>
+                {{ bill_payment_form.card_number }}
+            </div>
+            <div class="form-field">
+                <label for="{{ bill_payment_form.cvv_number.id_for_label }}">CVV Number:</label>
+                {{ bill_payment_form.cvv_number }}
+            </div>
+        </div>
+        <button type="submit" name="bill_payment">Pay Bill</button>
+    </form>
+</div>
+
+    <p style="font-family: 'Comic Sans MS', sans-serif; color: white" id="banksHeader" class="hidden">Supported Banks</p>
+    <div id="banks" class="payment-icons hidden">
+        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/banks/Royal_Bank_of_Canada-Logo.wine.svg' %}" alt="RBC" class="payment-icon">
+        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/banks/Canadian_Imperial_Bank_of_Commerce-Logo.wine.svg' %}" alt="CIBC" class="payment-icon">
+        <img style="width: 150px; height: 150px;" src="{% static 'finertia/svg-credit-card-payment-icons-main/banks/Bank_of_Montreal-Logo.wine.svg' %}" alt="BMO" class="payment-icon">
+        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/banks/Capital One Blue.svg' %}" alt="Capital One" class="payment-icon">
+        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/banks/TD Bank.svg' %}" alt="TD Bank" class="payment-icon">
+    </div>
+
+    <p style="font-family: 'Comic Sans MS', sans-serif; color: white" id="cardsHeader" class="hidden">Supported Payments</p>
+    <div id="cards" class="payment-icons hidden">
+        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/flat-rounded/visa.svg' %}" alt="Visa" class="payment-icon">
+        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/flat-rounded/mastercard.svg' %}" alt="Mastercard" class="payment-icon">
+        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/flat-rounded/amex.svg' %}" alt="Amex" class="payment-icon">
+        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/flat-rounded/paypal.svg' %}" alt="PayPal" class="payment-icon">
+        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/flat-rounded/unionpay.svg' %}" alt="UnionPay" class="payment-icon">
+    </div>
+
+    <script>
+        function toggleForms(value) {
+            {#var option = document.getElementById('optionSelect').value;#}
+            var transferForm = document.getElementById('transferForm');
+            var billForm = document.getElementById('billForm');
+            var banksheader  = document.getElementById('banksHeader')
+            var cardHeader = document.getElementById('cardsHeader')
+            var banks = document.getElementById('banks')
+            var cards = document.getElementById('cards')
+
+            if (value === 'transfer') {
+                transferForm.style.display = 'block';
+                billForm.style.display = 'none';
+                banksheader.style.display = 'block';
+                cardHeader.style.display = 'none';
+                banks.style.display = 'block';
+                cards.style.display = 'none';
+            } else if (value === 'bill') {
+                transferForm.style.display = 'none';
+                billForm.style.display = 'block';
+                banksheader.style.display = 'none';
+                cardHeader.style.display = 'block';
+                banks.style.display = 'none';
+                cards.style.display = 'block';
+            } else {
+                transferForm.style.display = 'none';
+                billForm.style.display = 'none';
+                banksheader.style.display = 'none';
+                cardHeader.style.display = 'none';
+                banks.style.display = 'none';
+                cards.style.display = 'none';
+            }
+        }
+
+    </script>
+
+{#     <script>#}
+{#        function toggleVisibility() {#}
+{#    var action = document.getElementById('actionSelect').value;#}
+{##}
+{#    // Get all sections#}
+{#    var transferForm = document.getElementById('transferForm');#}
+{#    var billForm = document.getElementById('billForm');#}
+{#    var banksSection = document.getElementById('banks');#}
+{#    var cardsSection = document.getElementById('cards');#}
+{#    var banksHeader = document.getElementById('banksHeader');#}
+{#    var cardsHeader = document.getElementById('cardsHeader');#}
+{##}
+{#    // Log the selected action to debug#}
+{#    console.log('Selected action:', action);#}
+{##}
+{#    // Hide all sections initially#}
+{#    transferForm.classList.add('hidden');#}
+{#    billForm.classList.add('hidden');#}
+{#    banksSection.classList.add('hidden');#}
+{#    cardsSection.classList.add('hidden');#}
+{#    banksHeader.classList.add('hidden');#}
+{#    cardsHeader.classList.add('hidden');#}
+{##}
+{#    // Show the relevant sections based on the selected action#}
+{#    if (action === 'transfer') {#}
+{#        transferForm.classList.remove('hidden');#}
+{#        banksSection.classList.remove('hidden');#}
+{#        banksHeader.classList.remove('hidden');#}
+{#    } else if (action === 'bill') {#}
+{#        billForm.classList.remove('hidden');#}
+{#        cardsSection.classList.remove('hidden');#}
+{#        cardsHeader.classList.remove('hidden');#}
+{#    }#}
+
+{#    </script>#}
+    <br>
+    <br>
+
+{#    <p style="font-family: 'Comic Sans MS',sans-serif"> Supported payments </p>#}
+{#    <div class="payment-icons">#}
+{#    <img src="{% static 'finertia/svg-credit-card-payment-icons-main/flat-rounded/visa.svg' %}" alt="Visa" class="payment-icon">#}
+{#    <img src="{% static 'finertia/svg-credit-card-payment-icons-main/flat-rounded/mastercard.svg' %}" alt="Mastercard" class="payment-icon">#}
+{#    <img src="{% static 'finertia/svg-credit-card-payment-icons-main/flat-rounded/amex.svg' %}" alt="Amex" class="payment-icon">#}
+{#    <img src="{% static 'finertia/svg-credit-card-payment-icons-main/flat-rounded/paypal.svg' %}" alt="PayPal" class="payment-icon">#}
+{#    <img src="{% static 'finertia/svg-credit-card-payment-icons-main/flat-rounded/unionpay.svg' %}" alt="UnionPay" class="payment-icon">#}
+{#    </div>#}
+{#    <p style="font-family: 'Comic Sans MS',sans-serif"> Supported Banks </p>#}
+{#    <div class="payment-icons">#}
+{#        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/banks/Royal_Bank_of_Canada-Logo.wine.svg' %}"#}
+{#             alt="RBC" class="payment-icon">#}
+{#        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/banks/Canadian_Imperial_Bank_of_Commerce-Logo.wine.svg' %}"#}
+{#             alt="CIBC" class="payment-icon">#}
+{#        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/banks/Bank_of_Montreal-Logo.wine.svg' %}"#}
+{#             alt="BMO" class="payment-icon">#}
+{#        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/banks/Capital_One-Logo.wine.svg' %}"#}
+{#             alt="NBC" class="payment-icon">#}
+{#        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/banks/TD_Bank,_N.A.-Logo.wine.svg' %}"#}
+{#             alt="CIBC" class="payment-icon">#}
+{##}
+{#    </div>#}
+
+{#    <p style="font-family: 'Comic Sans MS', sans-serif" id="banksHeader" class="hidden">Supported Banks</p>#}
+{#    <div id="banks" class="payment-icons hidden">#}
+{#        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/banks/Royal_Bank_of_Canada-Logo.wine.svg' %}" alt="RBC" class="payment-icon">#}
+{#        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/banks/Canadian_Imperial_Bank_of_Commerce-Logo.wine.svg' %}" alt="CIBC" class="payment-icon">#}
+{#        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/banks/Bank_of_Montreal-Logo.wine.svg' %}" alt="BMO" class="payment-icon">#}
+{#        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/banks/Capital_One-Logo.wine.svg' %}" alt="Capital One" class="payment-icon">#}
+{#        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/banks/TD_Bank,_N.A.-Logo.wine.svg' %}" alt="TD Bank" class="payment-icon">#}
+{#    </div>#}
+{##}
+{#    <p style="font-family: 'Comic Sans MS', sans-serif" id="cardsHeader" class="hidden">Supported Payments</p>#}
+{#    <div id="cards" class="payment-icons hidden">#}
+{#        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/flat-rounded/visa.svg' %}" alt="Visa" class="payment-icon">#}
+{#        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/flat-rounded/mastercard.svg' %}" alt="Mastercard" class="payment-icon">#}
+{#        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/flat-rounded/amex.svg' %}" alt="Amex" class="payment-icon">#}
+{#        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/flat-rounded/paypal.svg' %}" alt="PayPal" class="payment-icon">#}
+{#        <img src="{% static 'finertia/svg-credit-card-payment-icons-main/flat-rounded/unionpay.svg' %}" alt="UnionPay" class="payment-icon">#}
+{#    </div>#}
+
+{#     <script>#}
+{#        function toggleVisibility() {#}
+{#            var action = document.getElementById('actionSelect').value;#}
+{#            var banksSection = document.getElementById('banks');#}
+{#            var cardsSection = document.getElementById('cards');#}
+{#            var banksHeader = document.getElementById('banksHeader');#}
+{#            var cardsHeader = document.getElementById('cardsHeader');#}
+{##}
+{#            if (action === 'transfer') {#}
+{#                banksSection.classList.remove('hidden');#}
+{#                cardsSection.classList.add('hidden');#}
+{#                banksHeader.classList.remove('hidden');#}
+{#                cardsHeader.classList.add('hidden');#}
+{#            } else if (action === 'bill') {#}
+{#                banksSection.classList.add('hidden');#}
+{#                cardsSection.classList.remove('hidden');#}
+{#                banksHeader.classList.add('hidden');#}
+{#                cardsHeader.classList.remove('hidden');#}
+{#            } else {#}
+{#                banksSection.classList.add('hidden');#}
+{#                cardsSection.classList.add('hidden');#}
+{#                banksHeader.classList.add('hidden');#}
+{#                cardsHeader.classList.add('hidden');#}
+{#            }#}
+{#        }#}
+{#    </script>#}
+{% endblock %}
+
+
+
+

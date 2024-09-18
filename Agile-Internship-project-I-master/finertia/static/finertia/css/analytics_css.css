@@ -1,0 +1,205 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  /*background-color: rgb(42, 159, 163);*/
+  background-color: black;
+
+}
+
+.desktop-1 .container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 200px;
+  align-content: space-between;
+  height: 100vh;
+
+}
+
+.sidebar {
+  background-color: #000000;
+   color: #FFFFFF;
+  width: 300px;
+  margin-left: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .manage,
+.sidebar .preferences {
+  margin-top: 50px;
+  font-family: 'Bungee Spice', cursive;
+  margin-bottom: 20px;
+}
+
+.sidebar .menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.sidebar .menu-item img {
+  margin-right: 10px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.transactions, .summary, .goals, .weekly-view, .total-balance {
+background-color: #000000;
+   color: #FFFFFF;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.transactions .top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.transactions .transaction-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.transactions .transaction-item .picture {
+ margin: 10px;
+}
+
+.transactions .transaction-item .text-contents {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.summary .summary-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.goals .goal-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.weekly-view .chart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weekly-view .y-axis,
+.weekly-view .x-axis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weekly-view .bars {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer .user {
+  display: flex;
+  align-items: center;
+}
+
+.footer .user .avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.frame-19 {
+  /*background: url('../assets/images/finertia_transparent_1.png') 10% / 300px 300px no-repeat;*/
+  background: url('../assets/images/stock_cake_digital_finance_hub_17182170571.jpeg') 50% / cover no-repeat;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items:center;
+  gap: 20px; /* No space between items */
+  height: 180px;
+  padding: 5px 2px; /* Adjust padding as needed */
+  background-color: #1a1a1a; /* Dark background for header */
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for the header */
+  position: fixed; /* Keep header fixed at the top */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure header is above other content */
+  margin-left: 0;
+}
+
+.frame-19 div {
+  margin: 0 5px; /* Spacing between items */
+  cursor: pointer;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.frame-19 div:hover {
+  color: #f39c12; /* Highlight color on hover */
+}
+
+.frame-19 .frame-17 {
+  display: flex;
+  align-items: center;
+}
+
+.frame-19 .login {
+  padding: 5px 10px; /* Padding around the login button */
+  border: 1px solid #f39c12; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  background-color: transparent;
+  color: #f39c12; /* Text color */
+  cursor: pointer;
+  margin-right: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+}
+
+.frame-19 .login:hover {
+  background-color: #f39c12; /* Highlight background on hover */
+  color: #fff; /* Text color on hover */
+}
+
+/* Styling for paragraphs in the financial analysis results */
+/* Styling for paragraphs in the financial analysis results */
+.financial-form p {
+    font-family: 'Roboto', sans-serif; /* Change font family */
+    font-size: 16px; /* Set font size */
+    color: #333; /* Set text color */
+    margin: 10px 0; /* Add margin to space out paragraphs */
+    line-height: 1.6; /* Improve readability with line-height */
+}
+
+.financial-form strong {
+    color: #007bff; /* Use a different color for the strong text */
+    font-weight: 700; /* Make the strong text bold */
+}
